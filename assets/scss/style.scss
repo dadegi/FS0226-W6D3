@@ -1,0 +1,15 @@
+$bgColor: cyan;
+$titleSize: 2.5rem;
+$boxSystem: flex;
+
+body {
+	background-color: $bgColor;
+}
+
+h1 {
+	font-size: $titleSize;
+}
+
+.container {
+	display: $boxSystem;
+}

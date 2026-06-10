@@ -1,0 +1,13 @@
+body {
+  background-color: cyan;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.container {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

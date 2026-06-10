@@ -1,32 +1,32 @@
-$bgColor: cyan;
-$titleSize: 2.5rem;
-$boxSystem: flex;
-$titleSection: 1.8rem;
-$titleArticle: 1.5rem;
+@use 'partials/colors' as myColors;
+@use 'partials/boxMeasure' as myBoxMeasures;
+@use 'partials/fontSize' as myFontSize;
 
 body {
-	background-color: $bgColor;
+	background-color: myColors.$bgColor;
 }
 
 h1 {
-	font-size: $titleSize;
+	font-size: myFontSize.$titleSize;
+	color: myColors.$titleColor;
 }
 
-.container {
-	display: $boxSystem;
+section h2,
+article h2 {
+	color: myColors.$titleColor;
 }
 
 section {
 	background-color: aqua;
 	h2 {
-		font-size: $titleSection;
+		font-size: myFontSize.$titleSection;
 	}
 }
 
 article {
 	background-color: aquamarine;
 	h2 {
-		font-size: $titleArticle;
+		font-size: myFontSize.$titleArticle;
 	}
 }
 
@@ -45,15 +45,15 @@ article {
 
 /* nesting errato, poco gestibile con specifictà altissima */
 .page {
-    .container {
-        .row {
-            .col {
-                .card {
-                    .title {
-                        font-size: $titleSize;
-                    }
-                }
-            }
-        }
-    }
+	.container {
+		.row {
+			.col {
+				.card {
+					.title {
+						font-size: myFontSize.$titleSize;
+					}
+				}
+			}
+		}
+	}
 }

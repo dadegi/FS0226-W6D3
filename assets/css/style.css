@@ -4,25 +4,27 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 32px;
+  color: red;
 }
 
-.container {
-  display: flex;
+section h2,
+article h2 {
+  color: red;
 }
 
 section {
   background-color: aqua;
 }
 section h2 {
-  font-size: 1.8rem;
+  font-size: 27.2px;
 }
 
 article {
   background-color: aquamarine;
 }
 article h2 {
-  font-size: 1.5rem;
+  font-size: 20.8px;
 }
 
 .btn {
@@ -40,7 +42,7 @@ article h2 {
 
 /* nesting errato, poco gestibile con specifictà altissima */
 .page .container .row .col .card .title {
-  font-size: 2.5rem;
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

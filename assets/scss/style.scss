@@ -1,6 +1,8 @@
 $bgColor: cyan;
 $titleSize: 2.5rem;
 $boxSystem: flex;
+$titleSection: 1.8rem;
+$titleArticle: 1.5rem;
 
 body {
 	background-color: $bgColor;
@@ -12,4 +14,31 @@ h1 {
 
 .container {
 	display: $boxSystem;
+}
+
+section {
+	background-color: aqua;
+	h2 {
+		font-size: $titleSection;
+	}
+}
+
+article {
+	background-color: aquamarine;
+	h2 {
+		font-size: $titleArticle;
+	}
+}
+
+.btn {
+	padding: 8px 16px;
+	&:hover {
+		transform: translateY(-2px);
+	}
+	&.btn-large {
+		padding: 16px 32px;
+	}
+	&.disabled {
+		opacity: 0.5;
+	}
 }

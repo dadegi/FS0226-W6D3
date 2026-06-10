@@ -42,3 +42,18 @@ article {
 		opacity: 0.5;
 	}
 }
+
+/* nesting errato, poco gestibile con specifictà altissima */
+.page {
+    .container {
+        .row {
+            .col {
+                .card {
+                    .title {
+                        font-size: $titleSize;
+                    }
+                }
+            }
+        }
+    }
+}

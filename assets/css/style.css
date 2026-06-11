@@ -4,7 +4,7 @@ body {
 }
 
 .bg-body {
-  background-color: #fafaf5 !important;
+  background-color: #a5e29c !important;
 }
 
 .text-primary {
@@ -82,8 +82,19 @@ article h2 {
   border-radius: 50px !important;
 }
 
+.card-novita {
+  border: 1px solid hsl(220, 60%, 40%);
+  border-top: 4px solid hsl(220, 60%, 40%);
+}
+.card-novita .card-title {
+  color: hsl(220, 60%, 40%);
+}
+.card-novita:hover {
+  box-shadow: 0 6px 18px rgba(40.8, 81.6, 163.2, 0.25);
+}
+
 /* nesting errato, poco gestibile con specifictà altissima */
-.page .container .row .col .card .title {
+.page .container .row .col .card .title, .page .container .row .col .card-novita .title {
   font-size: 32px;
 }
 

@@ -2,6 +2,12 @@
 @use 'partials/boxMeasure' as myBoxMeasures;
 @use 'partials/fontSize' as myFontSize;
 
+$primary: red;
+$secondary: hsl(35, 30%, 50%);
+$body-bg: #fafaf5;
+$font-family-base: 'Roboto', sans-serif;
+$border-radius: 2px;
+
 @mixin baseContent {
 	background-color: myColors.$titleColor;
 	width: 80%;
@@ -9,7 +15,19 @@
 }
 
 body {
-	background-color: myColors.$bgColor;
+	font-family: $font-family-base;
+}
+
+.bg-body {
+	background-color: $body-bg !important;
+}
+
+.text-primary {
+	color: $primary !important;
+}
+
+.text-secondary {
+	color: $secondary !important;
 }
 
 h1 {
@@ -52,19 +70,25 @@ article {
 .firstContent {
 	@include baseContent;
 	border: 2px solid black;
-	border-radius: 10px;
+	&.rounded {
+		border-radius: $border-radius * 5 !important;
+	};
 }
 
 .secondContent {
 	@include baseContent;
 	border: 4px solid red;
-	border-radius: 25px;
+	&.rounded {
+		border-radius: $border-radius * 13 !important;
+	};
 }
 
 .thirdContent {
 	@include baseContent;
 	border: 8px solid blue;
-	border-radius: 25px;
+	&.rounded {
+		border-radius: $border-radius * 25 !important;
+	};
 }
 
 /* nesting errato, poco gestibile con specifictà altissima */

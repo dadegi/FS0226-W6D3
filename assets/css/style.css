@@ -1,6 +1,18 @@
 @charset "UTF-8";
 body {
-  background-color: cyan;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-body {
+  background-color: #fafaf5 !important;
+}
+
+.text-primary {
+  color: red !important;
+}
+
+.text-secondary {
+  color: hsl(35, 30%, 50%) !important;
 }
 
 h1 {
@@ -45,7 +57,9 @@ article h2 {
   width: 80%;
   margin: 0 auto;
   border: 2px solid black;
-  border-radius: 10px;
+}
+.firstContent.rounded {
+  border-radius: 10px !important;
 }
 
 .secondContent {
@@ -53,7 +67,9 @@ article h2 {
   width: 80%;
   margin: 0 auto;
   border: 4px solid red;
-  border-radius: 25px;
+}
+.secondContent.rounded {
+  border-radius: 26px !important;
 }
 
 .thirdContent {
@@ -61,7 +77,9 @@ article h2 {
   width: 80%;
   margin: 0 auto;
   border: 8px solid blue;
-  border-radius: 25px;
+}
+.thirdContent.rounded {
+  border-radius: 50px !important;
 }
 
 /* nesting errato, poco gestibile con specifictà altissima */
